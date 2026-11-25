@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Altus Citadel — Uzbekistan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+<style>
+/* VOICE: formal, quiet, institutional — a Luxembourg fund manager writing to ministries and LPs
+   IDEA: the firm's own pitch deck, opened up into a prospectus-like single page
+   PICTURE: the deck's black-and-white architecture photograph, full-bleed beside the title; a structure chart further down
+   COLOUR and TYPE: Altus navy and cool greys from the deck, steel-teal from the glass tower as the one accent; Source Serif 4 headings, Inter body, Raleway wordmark
+   LAYOUT: deck-style grey panel + photo hero, then alternating white / grey / navy bands, cards with navy icon discs */
+:root{color-scheme:light dark;
+--bg:light-dark(#ffffff,#0d1420);--alt:light-dark(#f1f2f4,#121b2a);--card:light-dark(#e8ebf0,#18233a);
+--ink:light-dark(#18233a,#e6eaf1);--mute:light-dark(#4e5a6e,#a5afc0);--line:light-dark(#d3d8e0,#26324a);
+--navy:#1c2a44;--deep:#101a2c;--logo:#1b395e;--steel:light-dark(#4d7c89,#7fb0bd);--warn:light-dark(#fff4d6,#3a2f12);--warnink:light-dark(#5d4708,#f2dc9c)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
+html.en [lang=ru],html:not(.en) [lang=en]{display:none!important}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;font-weight:600;line-height:1.1;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,4.6vw,52px)}h2{font-size:clamp(28px,3.2vw,40px);margin-bottom:12px}h3{font-size:19px;line-height:1.3}
+p{margin:0 0 12px}a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding:clamp(48px,6vw,88px) max(5vw,16px)}
+.alt{background:var(--alt)}
+.lead{font-size:17px;color:var(--mute);max-width:64ch}
+.sample{display:inline-block;font:500 12px/1 Inter,sans-serif;color:var(--warnink);background:var(--warn);border-radius:20px;padding:4px 9px;vertical-align:middle;white-space:nowrap}
+/* draft banner + header */
+.draft{background:var(--warn);color:var(--warnink);font-size:13.5px;padding:8px max(5vw,16px);text-align:center}
+header{position:sticky;top:0;z-index:10;background:var(--deep);color:#fff}
+.hd{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:12px max(5vw,16px)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.brand img{height:30px}.brand span{font:300 19px Raleway,sans-serif;letter-spacing:.14em}
+nav{display:flex;gap:4px;overflow-x:auto;flex:1;justify-content:flex-end;scrollbar-width:none}
+nav a{flex:none;color:#c9d2e0;text-decoration:none;font-size:14px;padding:10px 10px;border-radius:6px}
+nav a:hover,nav a:focus-visible{color:#fff;background:#ffffff14}
+.lang{display:flex;border:1px solid #ffffff40;border-radius:8px;overflow:hidden;flex:none}
+.lang button{all:unset;cursor:pointer;font:500 13px Inter,sans-serif;color:#c9d2e0;padding:0 12px;min-height:36px;display:grid;place-items:center}
+.lang button[aria-pressed=true]{background:#fff;color:var(--deep)}
+.lang button:focus-visible{outline:2px solid var(--steel);outline-offset:-2px}
+@media(max-width:900px){.hd{flex-wrap:wrap}nav{order:3;flex-basis:100%;justify-content:flex-start;margin:0 -10px}.lang{margin-left:auto}}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);min-height:min(78vh,700px);background:var(--alt);border-left:14px solid var(--deep)}
+.hero .txt{padding:clamp(40px,6vw,88px) clamp(24px,5vw,72px);display:flex;flex-direction:column;justify-content:center}
+.hero .mark{width:58px;margin-bottom:14px}
+.hero .word{font:400 18px Raleway,sans-serif;letter-spacing:.14em;color:var(--logo)}
+:root[data-theme=dark] .hero .word{color:#c8d3e6}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .hero .word{color:#c8d3e6}}
+.rule{width:64px;height:2px;background:var(--ink);margin:18px 0 26px}
+.hero .where{font-family:"Source Serif 4",Georgia,serif;font-size:18px;color:var(--mute);margin:14px 0 22px}
+.hero .photo{background:url(img/hero.jpg) center/cover;min-height:320px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.btn{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:8px;font-weight:500;text-decoration:none;font-size:15px}
+.btn.p{background:var(--navy);color:#fff}.btn.s{border:1px solid var(--ink);color:var(--ink)}
+:root[data-theme=dark] .btn.p{background:#e6eaf1;color:var(--deep)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .btn.p{background:#e6eaf1;color:var(--deep)}}
+.btn:focus-visible{outline:3px solid var(--steel);outline-offset:2px}
+.keys{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:36px;border-top:1px solid var(--line)}
+.keys div{padding:14px 14px 0 0}.keys b{display:block;font:600 22px "Source Serif 4",Georgia,serif;white-space:nowrap}.keys span{font-size:13.5px;color:var(--mute)}
+@media(max-width:760px){.hero{grid-template-columns:1fr;border-left-width:8px}.hero .photo{min-height:260px;order:2}.keys{grid-template-columns:1fr}.keys div{padding:12px 0;border-bottom:1px solid var(--line)}}
+/* cards */
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:32px}
+.card{background:var(--card);border-radius:6px;padding:28px 26px}
+.card p{color:var(--mute);font-size:15px;margin:10px 0 0}
+.ic{width:52px;height:52px;border-radius:50%;background:var(--deep);display:grid;place-items:center;margin-bottom:18px}
+.ic svg{width:26px;height:26px;fill:none;stroke:#fff;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.crit{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;margin-top:32px;border-top:2px solid var(--ink)}
+.crit div{padding:22px 22px 22px 0;border-bottom:1px solid var(--line)}
+.crit b{display:block;font:600 30px/1.1 "Source Serif 4",Georgia,serif;margin-bottom:8px;white-space:nowrap}
+.crit span{color:var(--mute);font-size:15px}
+/* uzbekistan band */
+.navy{background:var(--navy);color:#e9edf4}.navy .lead{color:#b9c3d4}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:#ffffff26;margin-top:34px;border:1px solid #ffffff26}
+.stats div{background:var(--navy);padding:24px 20px}
+.stats b{display:block;font:600 clamp(30px,3.4vw,40px)/1 "Source Serif 4",Georgia,serif;color:#fff;white-space:nowrap}
+.stats span{display:block;margin-top:10px;font-size:14.5px;color:#c4cddb}
+.stats sup{font-size:11px;color:#8fb7c2}
+.sect{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+.sect div{border-top:2px solid #8fb7c2;padding-top:14px}
+.sect h3{color:#fff;font-size:18px}.sect p{font-size:14.5px;color:#b9c3d4;margin-top:6px}
+.src{font-size:13px;color:#9eabbf;margin-top:26px}
+/* table */
+table{width:100%;border-collapse:collapse;margin-top:28px;font-size:15px}
+th{text-align:start;font-weight:500;color:var(--mute);font-size:13.5px;padding:10px 12px;border-bottom:2px solid var(--ink)}
+td{padding:16px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+td.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}th.n{text-align:right}
+td b{font-family:"Source Serif 4",Georgia,serif;font-size:17px;font-weight:600}
+/* process */
+.steps{list-style:none;padding:0;margin:32px 0 0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px;counter-reset:s}
+.steps li{counter-increment:s;border-top:2px solid var(--ink);padding-top:16px;position:relative}
+.steps li::before{content:counter(s);position:absolute;top:-15px;left:0;width:28px;height:28px;border-radius:50%;background:var(--deep);color:#fff;font:600 13px/28px Inter;text-align:center}
+.steps h3{font-size:17px;margin-top:8px}.steps p{font-size:14.5px;color:var(--mute);margin-top:6px}
+@media(max-width:960px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:34px}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+.two{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,56px);margin-top:56px;align-items:start}
+@media(max-width:860px){.two{grid-template-columns:1fr}}
+.chart{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:22px}
+.lv{display:grid;grid-template-columns:minmax(0,1fr);gap:0;justify-items:center}
+.box{width:100%;max-width:440px;border-radius:6px;padding:12px 16px;text-align:center;font-size:14.5px;background:var(--card)}
+.box b{display:block;font:600 16px "Source Serif 4",Georgia,serif}.box span{color:var(--mute);font-size:13px}
+.box.d{background:var(--deep);color:#fff}.box.d span{color:#b9c3d4}
+.box.g{background:transparent;border:1.5px solid var(--steel)}
+.arr{height:26px;width:2px;background:var(--mute);position:relative}.arr::after{content:"";position:absolute;bottom:-1px;left:-5px;border:6px solid transparent;border-top-color:var(--mute);border-bottom:0}
+.side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;width:100%;max-width:440px;margin-top:14px}
+.side .box{font-size:13.5px}
+.fees{border-top:2px solid var(--ink)}
+.fees div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.fees b{white-space:nowrap;font-variant-numeric:tabular-nums}
+.note{font-size:13px;color:var(--mute);margin-top:12px}
+/* deals + team */
+.deal{background:var(--card);border-radius:6px;padding:24px;display:flex;flex-direction:column;gap:6px}
+.deal .amt{font:600 30px/1.1 "Source Serif 4",Georgia,serif;white-space:nowrap}
+.deal .meta{font-size:13.5px;color:var(--mute)}.deal p{font-size:14.5px;color:var(--mute);margin:6px 0 0}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;margin-top:32px}
+.person{border-top:2px solid var(--ink);padding-top:18px}
+.av{width:56px;height:56px;border-radius:50%;background:var(--deep);color:#fff;display:grid;place-items:center;font:500 18px "Source Serif 4",Georgia,serif;margin-bottom:14px}
+.person h3{font-size:18px}.person .role{font-size:14px;color:var(--mute);margin:4px 0 8px}.person p{font-size:14px;color:var(--mute)}
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:var(--deep);color:#e9edf4}
+.contact .photo{background:url(img/tower.jpg) center/cover;min-height:360px}
+.contact .txt{padding:clamp(40px,6vw,80px) max(5vw,20px)}
+.contact h2{color:#fff}.contact .lead{color:#b9c3d4}
+.cl{margin-top:26px;border-top:1px solid #ffffff30}
+.cl div{display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap;padding:14px 0;border-bottom:1px solid #ffffff30}
+.cl span{color:#9eabbf;font-size:14px}.cl a,.cl b{color:#fff;font-weight:500;text-decoration:none;white-space:nowrap}
+.cl a:hover{text-decoration:underline}
+.copy{all:unset;cursor:pointer;font-size:13px;color:#8fb7c2;margin-left:10px;min-height:28px}
+.copy:focus-visible{outline:2px solid #8fb7c2}
+@media(max-width:760px){.contact{grid-template-columns:1fr}.contact .photo{min-height:220px}}
+.keys b span,.stats b span,.box b span,.cl b span,.crit b span{font:inherit;color:inherit;display:inline;margin:0}
+footer{background:var(--deep);color:#8e9ab0;font-size:13px;padding:28px max(5vw,16px) 40px;border-top:1px solid #ffffff1a}
+footer .wrap{display:grid;gap:14px}
+footer ol{margin:6px 0 0;padding-left:18px}footer a{color:#b9c3d4;overflow-wrap:anywhere}
+@media(max-width:600px){table{font-size:14px}.stack thead{display:none}.stack tr{display:grid;padding-block:12px;border-bottom:1px solid var(--line)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:7.5em;text-align:start}.stack td::before{content:attr(data-l);float:inline-start;width:7em;margin-inline-start:-7.5em;color:var(--mute);font-size:13px}.stack td.n{text-align:start}}
+</style>
+<style>
+.strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,40px);margin-top:28px}
+.strip h3{font-size:18px;margin:14px 0 6px}.strip p{color:var(--mute);font-size:15px;margin:0}
+.strip .ic{margin-bottom:0;width:44px;height:44px}.strip .ic svg{width:22px;height:22px}
+@media(max-width:760px){.strip{grid-template-columns:1fr}}
+.keys{grid-template-columns:repeat(2,minmax(0,1fr));max-width:460px}
+.keyh{font-size:13.5px;color:var(--mute);margin:30px 0 0}
+.keys{margin-top:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{border:1px solid #ffffff40;border-radius:20px;padding:6px 14px;font-size:14px;color:#dfe5ee}
+.steps{grid-template-columns:repeat(4,minmax(0,1fr))}
+.person{padding-top:16px}.person .role{margin-bottom:0}
+.need{list-style:none;padding:0;margin:22px 0 0;border-top:1px solid #ffffff30}
+.need li{padding:11px 0 11px 28px;border-bottom:1px solid #ffffff30;position:relative;font-size:15px;color:#dfe5ee}
+.need li::before{content:"";position:absolute;left:2px;top:17px;width:12px;height:7px;border-left:2px solid #8fb7c2;border-bottom:2px solid #8fb7c2;transform:rotate(-45deg)}
+.contact h3{color:#fff;font-size:18px;margin-top:30px}
+@media(max-width:960px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.keys{grid-template-columns:1fr}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="draft">
+  <span lang="ru"><b>Тестовая версия.</b> Данные с пометкой «пример» — условные.</span>
+  <span lang="en"><b>Test version.</b> Items tagged “sample” are illustrative.</span>
+</div>
+
+<header>
+  <div class="hd">
+    <a class="brand" href="#top"><img src="img/logo_white.png" alt=""><span>ALTUS CITADEL</span></a>
+    <nav aria-label="Sections">
+      <a href="#offer"><span lang="ru">Что вы получаете</span><span lang="en">What you get</span></a>
+      <a href="#process"><span lang="ru">Как это работает</span><span lang="en">How it works</span></a>
+      <a href="#partners"><span lang="ru">Фонды</span><span lang="en">Funds</span></a>
+      <a href="#track-record"><span lang="ru">Опыт</span><span lang="en">Track record</span></a>
+      <a href="#team"><span lang="ru">Команда</span><span lang="en">Team</span></a>
+      <a href="#contact"><span lang="ru">Подать проект</span><span lang="en">Submit</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button id="b-ru" type="button" aria-pressed="true">RU</button>
+      <button id="b-en" type="button" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="txt">
+    <img class="mark" src="img/logo_navy.png" alt="">
+    <div class="word">ALTUS CITADEL</div>
+    <div class="rule"></div>
+    <h1><span lang="ru">Международный капитал для вашего инфраструктурного проекта</span><span lang="en">International capital for your infrastructure project</span></h1>
+    <div class="where"><span lang="ru">Узбекистан · Люксембург · Кипр</span><span lang="en">Uzbekistan · Luxembourg · Cyprus</span></div>
+    <p class="lead" lang="ru">Вы развиваете проект национального значения в Узбекистане. Мы привлекаем в него капитал ведущих фондов Европы и США и выстраиваем структуру, понятную международным инвесторам.</p>
+    <p class="lead" lang="en">You are developing a project of national importance in Uzbekistan. We bring in capital from leading European and US funds and build a structure international investors understand.</p>
+    <div class="cta">
+      <a class="btn p" href="#contact"><span lang="ru">Подать проект</span><span lang="en">Submit a project</span></a>
+      <a class="btn s" href="#process"><span lang="ru">Как это работает</span><span lang="en">How it works</span></a>
+    </div>
+    <p class="keyh"><span lang="ru">Ваш проект подходит, если:</span><span lang="en">Your project fits if it has:</span></p>
+    <div class="keys">
+      <div><b>€200m+</b><span lang="ru">объём проекта</span><span lang="en">in project size</span></div>
+      <div><b lang="ru">Гарантия</b><b lang="en">A guarantee</b><span lang="ru">письменная, от государства</span><span lang="en">written, from the state</span></div>
+      <div><b lang="ru">Значимость</b><b lang="en">Significance</b><span lang="ru">стратегическая для страны</span><span lang="en">strategic for the country</span></div>
+      <div><b lang="ru">Инфраструктура</b><b lang="en">Infrastructure</b><span lang="ru">энергетика, транспорт, ЖКХ, логистика</span><span lang="en">energy, transport, utilities, logistics</span></div>
+    </div>
+  </div>
+  <div class="photo" role="img" aria-label="Architecture"></div>
+</section>
+
+<section class="band" id="offer">
+  <div class="wrap">
+    <h2><span lang="ru">Что вы получаете</span><span lang="en">What you get</span></h2>
+    <div class="strip">
+      <div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v9h9"/><path d="M20 15.5A9 9 0 1 1 8.5 3.7"/></svg></div>
+        <h3><span lang="ru">Долевой капитал</span><span lang="en">Equity capital</span></h3>
+        <p lang="ru">Пять ведущих фондов private equity Европы и США поручили нам искать проекты в Центральной Азии.</p>
+        <p lang="en">Five leading European and US private equity funds have mandated us to find projects in Central Asia.</p>
+      </div>
+      <div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5M5 10v8M9.7 10v8M14.3 10v8M19 10v8M3 20h18"/></svg></div>
+        <h3><span lang="ru">Европейская структура</span><span lang="en">A European structure</span></h3>
+        <p lang="ru">Холдинг и фонд в Люксембурге или на Кипре — то, чего ждут международные инвесторы и банки.</p>
+        <p lang="en">A holding and fund in Luxembourg or Cyprus — what international investors and banks expect.</p>
+      </div>
+      <div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.6 3 8.4 7 10 4-1.6 7-5.4 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3><span lang="ru">Один партнёр на весь срок</span><span lang="en">One partner throughout</span></h3>
+        <p lang="ru">От первой заявки до закрытия и далее: учёт, отчётность инвесторам и комплаенс.</p>
+        <p lang="en">From first submission to close and beyond: accounting, investor reporting and compliance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="process">
+  <div class="wrap">
+    <h2><span lang="ru">Как это работает</span><span lang="en">How it works</span></h2>
+    <ol class="steps" id="steps"></ol>
+    <div class="two">
+      <div class="chart">
+        <h3 style="margin-bottom:18px"><span lang="ru">Типовая структура</span><span lang="en">Typical structure</span> <span class="sample"><span lang="ru">пример</span><span lang="en">sample</span></span></h3>
+        <div class="lv">
+          <div class="box"><b><span lang="ru">Фонды-партнёры</span><span lang="en">Partner funds</span></b></div>
+          <div class="arr"></div>
+          <div class="box d"><b><span lang="ru">Фонд в Люксембурге</span><span lang="en">Luxembourg fund</span></b><span lang="ru">лицензированный управляющий (AIFM) · администратор — Altus Citadel</span><span lang="en">licensed manager (AIFM) · administrator: Altus Citadel</span></div>
+          <div class="arr"></div>
+          <div class="box"><b><span lang="ru">Холдинг (Кипр / Люксембург)</span><span lang="en">Holding (Cyprus / Luxembourg)</span></b></div>
+          <div class="arr"></div>
+          <div class="box d"><b><span lang="ru">Ваша проектная компания</span><span lang="en">Your project company</span></b><span lang="ru">Узбекистан</span><span lang="en">Uzbekistan</span></div>
+          <div class="side">
+            <div class="box g"><b><span lang="ru">Государство</span><span lang="en">The state</span></b><span lang="ru">ГЧП и гарантия</span><span lang="en">PPP and guarantee</span></div>
+            <div class="box g"><b><span lang="ru">МФИ и банки</span><span lang="en">IFIs and banks</span></b><span lang="ru">долг</span><span lang="en">debt</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3><span lang="ru">Сектора</span><span lang="en">Sectors</span></h3>
+        <p class="lead" style="font-size:15px;margin-top:8px" lang="ru">Рассматриваем проекты в секторах, которые государство развивает через ГЧП:</p>
+        <p class="lead" style="font-size:15px;margin-top:8px" lang="en">We look at projects in sectors the state is developing through PPPs:</p>
+        <div class="fees" id="sectors"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band navy" id="market">
+  <div class="wrap">
+    <h2><span lang="ru">Инвесторы уже смотрят на Узбекистан</span><span lang="en">Investors are already looking at Uzbekistan</span></h2>
+    <div class="stats">
+      <div><b>7,7%</b><span lang="ru">рост ВВП в 2025 г.<sup>1</sup></span><span lang="en">GDP growth in 2025<sup>1</sup></span></div>
+      <div><b><span lang="ru">$43,1 млрд</span><span lang="en">$43.1bn</span></b><span lang="ru">иностранных инвестиций в 2025 г.<sup>2</sup></span><span lang="en">foreign investment in 2025<sup>2</sup></span></div>
+      <div><b><span lang="ru">$34 млрд</span><span lang="en">$34bn</span></b><span lang="ru">проекты ГЧП в работе<sup>3</sup></span><span lang="en">PPP projects under way<sup>3</sup></span></div>
+      <div><b><span lang="ru">22 ГВт</span><span lang="en">22 GW</span></b><span lang="ru">новой генерации к 2030 г.<sup>4</sup></span><span lang="en">new generation by 2030<sup>4</sup></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="partners">
+  <div class="wrap">
+    <h2><span lang="ru">Фонды-партнёры</span><span lang="en">Partner funds</span> <span class="sample"><span lang="ru">пример</span><span lang="en">sample</span></span></h2>
+    <table class="stack">
+      <thead><tr><th lang="ru">Фонд</th><th lang="en">Fund</th><th lang="ru">Город</th><th lang="en">City</th><th lang="ru">Фокус</th><th lang="en">Focus</th><th class="n" lang="ru">Активы</th><th class="n" lang="en">AUM</th></tr></thead>
+      <tbody id="funds"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="band alt" id="track-record">
+  <div class="wrap">
+    <h2><span lang="ru">Опыт</span><span lang="en">Track record</span> <span class="sample"><span lang="ru">пример</span><span lang="en">sample</span></span></h2>
+    <div class="grid3" id="deals"></div>
+  </div>
+</section>
+
+<section class="band" id="team">
+  <div class="wrap">
+    <h2><span lang="ru">Команда</span><span lang="en">Team</span></h2>
+    <div class="team" id="people"></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="photo" role="img" aria-label="Glass tower"></div>
+  <div class="txt">
+    <h2><span lang="ru">Подать проект</span><span lang="en">Submit a project</span></h2>
+    <p class="lead" lang="ru">Пришлите краткое описание — ответим и скажем, подходит ли проект.</p>
+    <p class="lead" lang="en">Send a short summary — we will reply and tell you whether the project fits.</p>
+    <ul class="need" id="need"></ul>
+    <div class="cl" style="margin-top:28px">
+      <div><span lang="ru">Управляющий партнёр</span><span lang="en">Managing partner</span><b>Louis Hoche</b></div>
+      <div><span lang="ru">Телефон</span><span lang="en">Phone</span><a href="tel:+352621346261">+352 621 346 261</a></div>
+      <div><span>Email</span><span><a href="mailto:louis.h@altuscitadel.lu">louis.h@altuscitadel.lu</a><button class="copy" id="cp" type="button"><span lang="ru">Копировать</span><span lang="en">Copy</span></button></span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© Altus Citadel · <span lang="ru">Люксембург · Кипр</span><span lang="en">Luxembourg · Cyprus</span></div>
+    <div lang="ru">Altus Citadel выступает корпоративным администратором. Управление фондами осуществляет лицензированный управляющий альтернативными инвестиционными фондами (AIFM).</div>
+    <div lang="en">Altus Citadel acts as corporate administrator. Funds are managed by a licensed alternative investment fund manager (AIFM).</div>
+    <div><span lang="ru">Источники:</span><span lang="en">Sources:</span>
+      <ol>
+        <li><a href="https://www.worldbank.org/uz">World Bank — Uzbekistan overview</a></li>
+        <li><a href="https://gov.uz/en/miit/news/view/116876">Ministry of Investment, Industry and Trade — investments in 2025</a></li>
+        <li><a href="https://gov.uz/en/imv/news/view/103362">Ministry of Economy and Finance — Third PPP Roundtable</a></li>
+        <li><a href="https://www.trend.az/casia/uzbekistan/4235746.html">Trend — 22,000 MW of new capacity by 2030 (Oct 2026)</a></li>
+      </ol>
+    </div>
+    <div lang="ru">Материал носит информационный характер и не является предложением ценных бумаг или инвестиционной рекомендацией.</div>
+    <div lang="en">For information only; not an offer of securities or investment advice.</div>
+  </div>
+</footer>
+
+<script>
+{
+const S=' <span class="sample"><span lang="ru">пример</span><span lang="en">sample</span></span>';
+const bi=(r,e)=>`<span lang="ru">${r}</span><span lang="en">${e}</span>`;
+const funds=[
+ ["Corvanne Capital Partners","Лондон","London","Энергопереход","Energy transition","€18bn"],
+ ["Halvard Ridge Infrastructure","Нью-Йорк","New York","Инфраструктура","Infrastructure","$24bn"],
+ ["Brevaux Partners","Париж","Paris","Транспорт","Transport","€11bn"],
+ ["Ostermark Equity","Франкфурт","Frankfurt","Энергетика, логистика","Energy, logistics","€14bn"],
+ ["Kestrel Bay Capital","Бостон","Boston","ЖКХ","Utilities","$9bn"]];
+document.getElementById('funds').innerHTML=funds.map(f=>`<tr><td><b>${f[0]}</b></td><td>${bi(f[1],f[2])}</td><td>${bi(f[3],f[4])}</td><td class="n">${f[5]}</td></tr>`).join('');
+
+const steps=[
+ ["Вы подаёте проект","You submit","Краткое описание: сектор, объём, стадия, статус гарантии.","A short summary: sector, size, stage, guarantee status."],
+ ["Мы оцениваем","We assess","Проверяем соответствие критериям и проводим due diligence.","We check fit with the criteria and run due diligence."],
+ ["Структура и гарантия","Structure and guarantee","Готовим структуру и вместе с госорганами — соглашение о ГЧП и гарантию.","We build the structure and, with state bodies, the PPP agreement and guarantee."],
+ ["Капитал и сопровождение","Capital and support","Фонды вносят капитал; мы ведём структуру весь срок проекта.","Funds commit capital; we run the structure for the life of the project."]];
+document.getElementById('steps').innerHTML=steps.map(s=>`<li><h3>${bi(s[0],s[1])}</h3><p lang="ru">${s[2]}</p><p lang="en">${s[3]}</p></li>`).join('');
+
+const sectors=[["Энергетика и ВИЭ","Energy and renewables","генерация, накопители, сети","generation, storage, grids"],["Транспорт","Transport","платные дороги, ж/д, аэропорты","toll roads, rail, airports"],["Водоснабжение и ЖКХ","Water and utilities","водоканалы, ирригация, отходы","water, irrigation, waste"],["Логистика","Logistics","хабы, сухие порты, коридоры","hubs, dry ports, corridors"]];
+document.getElementById('sectors').innerHTML=sectors.map(s=>`<div><span>${bi(s[0],s[1])}</span><span style="color:var(--mute);text-align:right">${bi(s[2],s[3])}</span></div>`).join('');
+
+const deals=[
+ ["€310m","Солнечная станция 400 МВт с накопителем","400 MW solar plant with storage","Энергетика · Центральная Азия","Energy · Central Asia"],
+ ["€450m","Платная автодорога, концессия 30 лет","Toll road, 30-year concession","Транспорт · Кавказ","Transport · Caucasus"],
+ ["€260m","Мультимодальный логистический хаб","Multimodal logistics hub","Логистика · Центральная Азия","Logistics · Central Asia"]];
+document.getElementById('deals').innerHTML=deals.map(d=>`<div class="deal"><div class="amt">${d[0]}</div><h3>${bi(d[1],d[2])}</h3><div class="meta">${bi(d[3],d[4])}</div></div>`).join('');
+
+const people=[
+ ["LH","Louis Hoche","Управляющий партнёр","Managing Partner",0],
+ ["TR","Timur Rakhimov","Центральная Азия · Ташкент","Central Asia · Tashkent",1],
+ ["SM","Sophie Marchal","Партнёр, фонды","Partner, Funds",1],
+ ["AK","Andreas Kyriakou","Директор, Кипр","Director, Cyprus",1],
+ ["ER","Elena Reuter","Юридическая практика","Legal and Structuring",1]];
+document.getElementById('people').innerHTML=people.map(p=>`<div class="person"><div class="av">${p[0]}</div><h3>${p[1]}${p[4]?S:''}</h3><div class="role">${bi(p[2],p[3])}</div></div>`).join('');
+
+const need=[["Сектор и местоположение","Sector and location"],["Объём и планируемая структура финансирования","Size and planned financing structure"],["Стадия: ТЭО, разрешения, земля","Stage: feasibility study, permits, land"],["Статус соглашения о ГЧП и государственной гарантии","Status of the PPP agreement and state guarantee"],["Инициатор проекта и контактное лицо","Project sponsor and contact person"]];
+document.getElementById('need').innerHTML=need.map(n=>`<li>${bi(n[0],n[1])}</li>`).join('');
+
+const root=document.documentElement,bru=document.getElementById('b-ru'),ben=document.getElementById('b-en');
+const stack=()=>{for(const t of document.querySelectorAll('table.stack')){const hs=[...t.rows[0].cells].filter(c=>getComputedStyle(c).display!=='none').map(c=>c.textContent);for(const r of t.tBodies[0].rows)[...r.cells].forEach((c,i)=>c.dataset.l=hs[i]||'')}};
+const setLang=l=>{root.classList.toggle('en',l==='en');root.lang=l;bru.setAttribute('aria-pressed',l==='ru');ben.setAttribute('aria-pressed',l==='en');
+ document.title=l==='en'?'Altus Citadel — Uzbekistan':'Altus Citadel — Узбекистан';try{localStorage.setItem('ac-lang',l)}catch(e){}stack()};
+bru.addEventListener('click',()=>setLang('ru'));ben.addEventListener('click',()=>setLang('en'));
+let saved='ru';try{saved=localStorage.getItem('ac-lang')||'ru'}catch(e){}
+setLang(saved);
+
+const cp=document.getElementById('cp');
+cp.addEventListener('click',()=>{navigator.clipboard.writeText('louis.h@altuscitadel.lu').then(()=>{cp.textContent=root.lang==='en'?'Copied':'Скопировано'},()=>{cp.textContent=root.lang==='en'?'Select and copy':'Выделите и скопируйте'})});
+}
+</script>
+</body>
+</html>
